@@ -1,10 +1,12 @@
-:from telethon import TelegramClient
+from telethon import TelegramClient
 
-# Replace this with your actual session file
-session_file = 'your_session_file'  # e.g., 'myaccount.session'
+# Replace these with your actual session file, API ID, and API hash
+session_file = '+98 9378543697.session'  # Your session file
+api_id = 26159648                       # Your API ID
+api_hash = '4ab1fd7ab6a2e35d629f31992d5839fe'  # Your API hash
 
 # Initialize the Telegram client with the session file
-client = TelegramClient(session_file, api_id=None, api_hash=None)
+client = TelegramClient(session_file, api_id, api_hash)
 
 async def main():
     # Start the client
